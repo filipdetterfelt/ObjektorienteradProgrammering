@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-
+//Kommentar
 public class Huvudprogram {
     List<Växter> plantList = new ArrayList<>();
     public Huvudprogram() {
