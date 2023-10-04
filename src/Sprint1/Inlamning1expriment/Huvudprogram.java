@@ -28,9 +28,19 @@ public class Huvudprogram {
             for(Växter växt : plantList) {
                 if (plant.equalsIgnoreCase(växt.getName())) {
                     växt.printFormel();
-                    found = false;
-                    break;
+                    String searchOneMore = JOptionPane.showInputDialog("Vill du söka efter en till växt? (y/n) ");
+                    if (searchOneMore.equalsIgnoreCase("y")){
+                        break;
+
+
+                    }
+                    else if(searchOneMore.equalsIgnoreCase("n")){}
+
+                        found = false;
+                        break;
+
                 }
+
             }
             if (found) {
                 for(Växter.PlantsInHotel plantPrintOut : Växter.PlantsInHotel.values()){
